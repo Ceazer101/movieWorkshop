@@ -1,17 +1,17 @@
-package com.example.movieworkshop.view;
+package com.example.movieworkshop.repositories;
 
-import com.example.movieworkshop.model.Movie;
+import com.example.movieworkshop.models.Movie;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class FileHandler {
+public class MovieHandler {
 
     public ArrayList<Movie> addFileToList() {
         ArrayList<Movie> allMovies = new ArrayList<>();
-        File movieData = new File("model/imdb-data.csv");
+        File movieData = new File("data/imdb-data.csv");
         try {
             Scanner scan = new Scanner(movieData);
             while (scan.hasNextLine()) {

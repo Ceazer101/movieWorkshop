@@ -1,4 +1,4 @@
-package com.example.movieworkshop.model;
+package com.example.movieworkshop.models;
 
 public class Movie implements Comparable<Movie>{
 
@@ -20,6 +20,10 @@ public class Movie implements Comparable<Movie>{
 
     public int compareTo(Movie other){
         return rating - other.rating;
+    }
+
+    public String getHasAwards() {
+        return hasAwards;
     }
 
     @Override
